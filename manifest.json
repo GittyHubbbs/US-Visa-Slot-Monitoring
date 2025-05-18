@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Visa Slot Monitor",
+  "version": "1.0",
+  "description": "Monitors visa appointment slots and updates status",
+  "permissions": ["storage", "scripting", "alarms", "notifications"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Visa Monitor"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}

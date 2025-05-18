@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Visa Slot Monitor</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 10px;
+      width: 250px;
+    }
+    h2 {
+      font-size: 16px;
+    }
+    select, button {
+      margin-bottom: 10px;
+      width: 100%;
+      padding: 5px;
+    }
+    #statusBox {
+      background-color: #f4f4f4;
+      border-radius: 5px;
+      padding: 10px;
+      margin-top: 10px;
+      font-size: 14px;
+    }
+    .label {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h2>Visa Slot Monitor</h2>
+  <label for="month">Select Month:</label>
+  <select id="month">
+    <option>January</option><option>February</option><option>March</option>
+    <option>April</option><option>May</option><option>June</option>
+    <option>July</option><option>August</option><option>September</option>
+    <option>October</option><option>November</option><option>December</option>
+  </select>
+
+  <label for="year">Select Year:</label>
+  <select id="year">
+    <option>2025</option><option>2026</option>
+  </select>
+
+  <button id="start">Start Monitoring</button>
+  <button id="stop">Stop Monitoring</button>
+
+  <div id="statusBox">
+    <div><span class="label">Status:</span> <span id="monitoringStatus">Not monitoring</span></div>
+    <div><span class="label">Month:</span> <span id="currentMonth">N/A</span></div>
+    <div><span class="label">Year:</span> <span id="currentYear">N/A</span></div>
+    <div><span class="label">Checks:</span> <span id="checkCount">0</span></div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
